@@ -1,0 +1,28 @@
+﻿spring:
+  profiles:
+    active: dev
+  application:
+    name: provider-employment
+eureka:
+  client:
+    service-url:
+      default-zone: http://192.168.43.130:30800/eureka
+    fetch-registry: true
+    register-with-eureka: true
+
+---
+spring:
+  profiles: dev
+server:
+  port: 8001
+eureka:
+  instance:
+    instance-id: provide-employment-8001
+---
+spring:
+     profiles: test
+server:
+  port: 8002
+eureka:
+  instance:
+    instance-id: provide-employment-8002
