@@ -46,7 +46,7 @@ mybatis:
   config-location:  classpath:mybatis/config.xml
 server:
   servlet:
-    context-path: springcloud
+    context-path: /springcloud
 ---
 spring:
   profiles: dev
